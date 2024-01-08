@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'tgchart'
+            keyPassword '82778277'
+            storeFile file('/home/maxf/workspace/android/TGChart/keystore.jks')
+            storePassword '82778277'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.filenkov.tgchart"
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+dependencies {
+}

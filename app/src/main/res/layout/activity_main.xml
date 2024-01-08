@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/dayBgColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/dayToolbarBgColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="Statistics"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp" />
+
+        <ImageView
+            android:id="@+id/nightmode"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_nightmode" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/caption"
+                android:text="Followers 1" />
+
+            <com.filenkov.tgchart.ChartView
+                android:id="@+id/chart0"
+                style="@style/chart" />
+
+            <TextView
+                style="@style/caption"
+                android:text="Followers 2" />
+
+            <com.filenkov.tgchart.ChartView
+                android:id="@+id/chart1"
+                style="@style/chart" />
+
+            <TextView
+                style="@style/caption"
+                android:text="Followers 3" />
+
+            <com.filenkov.tgchart.ChartView
+                android:id="@+id/chart2"
+                style="@style/chart" />
+
+            <TextView
+                style="@style/caption"
+                android:text="Followers 4" />
+
+            <com.filenkov.tgchart.ChartView
+                android:id="@+id/chart3"
+                style="@style/chart" />
+
+            <TextView
+                style="@style/caption"
+                android:text="Followers 5" />
+
+            <com.filenkov.tgchart.ChartView
+                android:id="@+id/chart4"
+                style="@style/chart" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

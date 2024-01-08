@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dayBgColor">#ffffff</color>
+    <color name="nightBgColor">#1d2733</color>
+    <color name="dayToolbarBgColor">#517da2</color>
+    <color name="nightToolbarBgColor">#212d3b</color>
+</resources>
